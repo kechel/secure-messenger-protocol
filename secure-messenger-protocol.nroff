@@ -1,0 +1,190 @@
+.pl 10.0i
+.po 0
+.ll 7.2i
+.lt 7.2i
+.nr LL 7.2i
+.nr LT 7.2i
+.ds LF Jan O. Kechel 
+.ds RF FORMFEED[Page %]
+.ds LH INTERNET DRAFT
+.ds June 3, 2014
+.ds CH Secure Messenger Protocol
+.ds CF Expires June 2, 2015
+.hy 0
+.nh
+.ad l
+.in 0
+
+
+.nf
+.tl 'INTERNET-DRAFT''Jan Kechel'
+.tl 'Intended Status: Proposed Standard'''
+.tl 'Expires: June 2, 2015''June 3, 2014'
+.fi
+
+.ce 2
+Secure Messenger Protocol
+Jan O. Kechel
+.fi
+.in 3
+
+
+.ti 0
+Abstract
+
+This document describes the Secure Messenger Protocol, which is designed to
+allow the creation of easy to use messenger applications based on standard 
+E-Mail as transportation-medium and pgp as encryption mechanism.
+
+.ti 0
+Status of this Memo
+
+This Internet-Draft is submitted to IETF in full conformance with the provisions of BCP\078 and BCP\079.
+
+Internet-Drafts are working documents of the Internet Engineering Task Force (IETF), its areas, and its working groups.  Note that other groups may also distribute working documents as \%Internet-Drafts.
+
+Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."
+
+The list of current Internet-Drafts can be accessed at \%http://www.ietf.org/1id-abstracts.html
+
+The list of Internet-Draft Shadow Directories can be accessed at http://www.ietf.org/shadow.html
+
+
+.ti 0
+Copyright and License Notice\" Boilerplate from December 2009
+
+Copyright (c) 2013 IETF Trust and the persons identified as the document authors. All rights reserved.
+
+This document is subject to BCP\078 and the IETF Trust's Legal Provisions Relating to IETF Documents \%(http://trustee.ietf.org/license-info) in effect on the date of publication of this document. Please review these documents carefully, as they describe your rights and restrictions with respect to this document. Code Components extracted from this document must include Simplified BSD License text as described in Section\04.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.
+
+
+
+.\" \# TD4  -- Set TOC depth by altering this value (TD5 = depth 5)
+.\" \# TOC  -- Beginning of auto updated Table of Contents
+.in 0
+Table of Contents
+
+.nf
+   1  Introduction  . . . . . . . . . . . . . . . . . . . . . . . . .  3
+     1.1  Typical content . . . . . . . . . . . . . . . . . . . . . .  3
+   2 Encrypted and Signed Data Block  . . . . . . . . . . . . . . . .  3
+     2.1 Groups . . . . . . . . . . . . . . . . . . . . . . . . . . .  3
+     2.2 Recipients . . . . . . . . . . . . . . . . . . . . . . . . .  3
+     2.3 Public Keys  . . . . . . . . . . . . . . . . . . . . . . . .  3
+     2.4 Text-Message . . . . . . . . . . . . . . . . . . . . . . . .  3
+     2.5 Attachments  . . . . . . . . . . . . . . . . . . . . . . . .  3
+   8  Security Considerations . . . . . . . . . . . . . . . . . . . .  4
+   9  References  . . . . . . . . . . . . . . . . . . . . . . . . . .  4
+     9.1  Normative References  . . . . . . . . . . . . . . . . . . .  4
+     9.2  Informative References  . . . . . . . . . . . . . . . . . .  4
+   Authors' Addresses . . . . . . . . . . . . . . . . . . . . . . . .  4
+.fi
+.in 3
+
+.\" \# ETC -- End of auto updated Table of Contents
+
+.bp
+.ti 0
+1  Introduction
+
+The Secure Messenger Protocol specifies a file-format to allow communication between
+any Messenger Application or E-Mail Program that implements this protocol.
+The file-format is text-based and contains some meta-information as well as encrypted
+data, which can be via E-Mail as attachment or as plain text.
+The protocol takes care of public-key-exchange between recipients, private-key-distribution 
+between different Apps and Programs of the user himself as well as a simple
+format to place attachments like images or documents.
+
+.ti 0
+1.1  Typical content
+
+.in 6
+1. E-Mail Subject is always: "Secure Messenger Protocol Message"
+
+2. Attachment named: public-key-1 (optional)
+
+.in 9
+2.1 public-key is a "PGP PUBLIC KEY BLOCK"
+
+.in 6
+3. Attachment named: encryped-and-signed-data, which contains:
+
+.in 9
+3.1 group name
+
+3.2 list of recipients
+
+3.3 public-keys of all recipients (optional)
+
+3.4 text-message
+
+3.5 attachments
+
+.ti 0
+2 Encrypted and Signed Data Block
+
+.ti 0
+2.1 Groups
+
+.ti 0
+2.2 Recipients
+
+.ti 0
+2.3 Public Keys
+
+.ti 0
+2.4 Text-Message
+
+.ti 0
+2.5 Attachments
+
+
+.bp
+.ti 0
+8  Security Considerations
+
+<Security considerations text>
+
+
+.ti 0
+9  References
+
+.ti 0 
+9.1  Normative References
+
+.in 14
+.\" \# REF  -- Managed reference list. Syntax: [RFC]nnnn[;Label], ... ,[RFC]nnnn[;Label]
+.\" \# 3156;MIMEPGP, 5321;SMTP
+.ti 3
+[MIMEPGP]  Elkins, M., Del Torto, D., Levien, R., and T. Roessler, "MIME Security with OpenPGP", RFC\03156, August 2001.
+
+.ti 3
+[SMTP]     Klensin, J., "Simple Mail Transfer Protocol", RFC\05321, October 2008.
+
+.\" \# ERF -- End of managed reference list
+
+
+.ti 0
+9.2  Informative References
+
+.in 14
+.\" \# REF  -- Managed reference list. Syntax: [RFC]nnnn[;Label], ... ,[RFC]nnnn[;Label]
+.\" \# 
+.\" \# ERF -- End of managed reference list
+.in 3
+
+
+.ti 0
+Authors' Addresses
+
+.sp
+.nf
+Jan O. Kechel
+Calle Quilla 8/16
+E-35558 Caleta de Famara
+Canary Islands
+
+EMail: jan@kechel.de
+.sp
+.fi
+
