@@ -2,12 +2,14 @@
 
 
 
-INTERNET-DRAFT                                                Jan Kechel
-Intended Status: Proposed Standard                                      
-Expires: June 2, 2015                                       June 3, 2014
+Secure Messenger Protocol                                     Jan Kechel
+Free and Public Standard                                                
+CC BY-ND 4.0                                                            
 
                        Secure Messenger Protocol
-                             Jan O. Kechel
+                               Jan Kechel
+                              Version 0.1
+                               2014-06-08
 
 
 Abstract
@@ -17,51 +19,21 @@ Abstract
    based on standard E-Mail as transportation-medium and pgp as
    encryption mechanism.
 
-Status of this Memo
+   The latest version of this document can always be found on GitHub:
 
-   This Internet-Draft is submitted to IETF in full conformance with the
-   provisions of BCP 78 and BCP 79.
+           https://github.com/kechel/secure-messenger-protocol          
 
-   Internet-Drafts are working documents of the Internet Engineering
-   Task Force (IETF), its areas, and its working groups.  Note that
-   other groups may also distribute working documents as
-   Internet-Drafts.
+Status of this Standard
 
-   Internet-Drafts are draft documents valid for a maximum of six months
-   and may be updated, replaced, or obsoleted by other documents at any
-   time.  It is inappropriate to use Internet-Drafts as reference
-   material or to cite them other than as "work in progress."
-
-   The list of current Internet-Drafts can be accessed at
-   http://www.ietf.org/1id-abstracts.html
-
-   The list of Internet-Draft Shadow Directories can be accessed at
-   http://www.ietf.org/shadow.html
-
+   This is 'work in progress'.
 
 Copyright and License Notice
 
-   Copyright (c) 2013 IETF Trust and the persons identified as the
-   document authors. All rights reserved.
-
-   This document is subject to BCP 78 and the IETF Trust's Legal
-   Provisions Relating to IETF Documents
-   (http://trustee.ietf.org/license-info) in effect on the date of
-   publication of this document. Please review these documents
-   carefully, as they describe your rights and restrictions with respect
-   to this document. Code Components extracted from this document must
- 
-
-
-Jan O. Kechel             Expires June 2, 2015                  [Page 1]
-
-INTERNET DRAFT         Secure Messenger Protocol                        
-
-
-   include Simplified BSD License text as described in Section 4.e of
-   the Trust Legal Provisions and are provided without warranty as
-   described in the Simplified BSD License.
-
+   This work is licensed under the Creative Commons Attribution-
+   NoDerivatives 4.0 International License. To view a copy of this
+   license, visit http://creativecommons.org/licenses/by-nd/4.0/ or send
+   a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain
+   View, California, 94041, USA.
 
 
 Table of Contents
@@ -74,10 +46,18 @@ Table of Contents
      2.3 Public Keys  . . . . . . . . . . . . . . . . . . . . . . . .  3
      2.4 Text-Message . . . . . . . . . . . . . . . . . . . . . . . .  3
      2.5 Attachments  . . . . . . . . . . . . . . . . . . . . . . . .  3
-   8  Security Considerations . . . . . . . . . . . . . . . . . . . .  4
-   9  References  . . . . . . . . . . . . . . . . . . . . . . . . . .  4
-     9.1  Normative References  . . . . . . . . . . . . . . . . . . .  4
-     9.2  Informative References  . . . . . . . . . . . . . . . . . .  4
+   3  Security Considerations . . . . . . . . . . . . . . . . . . . .  4
+   4  References  . . . . . . . . . . . . . . . . . . . . . . . . . .  4
+     4.1  Normative References  . . . . . . . . . . . . . . . . . . .  4
+     4.2  Informative References  . . . . . . . . . . . . . . . . . .  4
+ 
+
+
+Jan Kechel                                                      [Page 1]
+
+                       Secure Messenger Protocol                        
+
+
    Authors' Addresses . . . . . . . . . . . . . . . . . . . . . . . .  4
 
 
@@ -106,12 +86,32 @@ Table of Contents
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
 
-Jan O. Kechel             Expires June 2, 2015                  [Page 2]
+Jan Kechel                                                      [Page 2]
 
-INTERNET DRAFT         Secure Messenger Protocol                        
+                       Secure Messenger Protocol                        
 
 
 1  Introduction
@@ -165,19 +165,19 @@ INTERNET DRAFT         Secure Messenger Protocol
  
 
 
-Jan O. Kechel             Expires June 2, 2015                  [Page 3]
+Jan Kechel                                                      [Page 3]
 
-INTERNET DRAFT         Secure Messenger Protocol                        
+                       Secure Messenger Protocol                        
 
 
-8  Security Considerations
+3  Security Considerations
 
          <Security considerations text>
 
 
-9  References
+4  References
 
-9.1  Normative References
+4.1  Normative References
 
    [MIMEPGP]  Elkins, M., Del Torto, D., Levien, R., and T. Roessler,
               "MIME Security with OpenPGP", RFC 3156, August 2001.
@@ -187,7 +187,7 @@ INTERNET DRAFT         Secure Messenger Protocol
 
 
 
-9.2  Informative References
+4.2  Informative References
 
 
 
@@ -221,4 +221,4 @@ Authors' Addresses
 
 
 
-Jan O. Kechel             Expires June 2, 2015                  [Page 4]
+Jan Kechel                                                      [Page 4]

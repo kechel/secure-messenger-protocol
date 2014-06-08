@@ -1,15 +1,7 @@
-.pl 10.0i
-.po 0
-.ll 7.2i
-.lt 7.2i
-.nr LL 7.2i
-.nr LT 7.2i
-.ds LF Jan O. Kechel 
+.ds LF Jan Kechel 
 .ds RF FORMFEED[Page %]
-.ds LH INTERNET DRAFT
 .ds June 3, 2014
 .ds CH Secure Messenger Protocol
-.ds CF Expires June 2, 2015
 .hy 0
 .nh
 .ad l
@@ -17,14 +9,16 @@
 
 
 .nf
-.tl 'INTERNET-DRAFT''Jan Kechel'
-.tl 'Intended Status: Proposed Standard'''
-.tl 'Expires: June 2, 2015''June 3, 2014'
+.tl 'Secure Messenger Protocol''Jan Kechel'
+.tl 'Free and Public Standard'''
+.tl 'CC BY-ND 4.0'''
 .fi
 
-.ce 2
+.ce 4
 Secure Messenger Protocol
-Jan O. Kechel
+Jan Kechel
+Version 0.1
+2014-06-08
 .fi
 .in 3
 
@@ -36,27 +30,19 @@ This document describes the Secure Messenger Protocol, which is designed to
 allow the creation of easy to use messenger applications based on standard 
 E-Mail as transportation-medium and pgp as encryption mechanism.
 
-.ti 0
-Status of this Memo
+The latest version of this document can always be found on GitHub:
 
-This Internet-Draft is submitted to IETF in full conformance with the provisions of BCP\078 and BCP\079.
-
-Internet-Drafts are working documents of the Internet Engineering Task Force (IETF), its areas, and its working groups.  Note that other groups may also distribute working documents as \%Internet-Drafts.
-
-Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."
-
-The list of current Internet-Drafts can be accessed at \%http://www.ietf.org/1id-abstracts.html
-
-The list of Internet-Draft Shadow Directories can be accessed at http://www.ietf.org/shadow.html
-
+.tl ''https://github.com/kechel/secure-messenger-protocol''
 
 .ti 0
-Copyright and License Notice\" Boilerplate from December 2009
+Status of this Standard
 
-Copyright (c) 2013 IETF Trust and the persons identified as the document authors. All rights reserved.
+This is 'work in progress'.
 
-This document is subject to BCP\078 and the IETF Trust's Legal Provisions Relating to IETF Documents \%(http://trustee.ietf.org/license-info) in effect on the date of publication of this document. Please review these documents carefully, as they describe your rights and restrictions with respect to this document. Code Components extracted from this document must include Simplified BSD License text as described in Section\04.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.
+.ti 0
+Copyright and License Notice
 
+This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nd/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
 
 
 .\" \# TD4  -- Set TOC depth by altering this value (TD5 = depth 5)
@@ -73,10 +59,10 @@ Table of Contents
      2.3 Public Keys  . . . . . . . . . . . . . . . . . . . . . . . .  3
      2.4 Text-Message . . . . . . . . . . . . . . . . . . . . . . . .  3
      2.5 Attachments  . . . . . . . . . . . . . . . . . . . . . . . .  3
-   8  Security Considerations . . . . . . . . . . . . . . . . . . . .  4
-   9  References  . . . . . . . . . . . . . . . . . . . . . . . . . .  4
-     9.1  Normative References  . . . . . . . . . . . . . . . . . . .  4
-     9.2  Informative References  . . . . . . . . . . . . . . . . . .  4
+   3  Security Considerations . . . . . . . . . . . . . . . . . . . .  4
+   4  References  . . . . . . . . . . . . . . . . . . . . . . . . . .  4
+     4.1  Normative References  . . . . . . . . . . . . . . . . . . .  4
+     4.2  Informative References  . . . . . . . . . . . . . . . . . .  4
    Authors' Addresses . . . . . . . . . . . . . . . . . . . . . . . .  4
 .fi
 .in 3
@@ -141,16 +127,16 @@ format to place attachments like images or documents.
 
 .bp
 .ti 0
-8  Security Considerations
+3  Security Considerations
 
 <Security considerations text>
 
 
 .ti 0
-9  References
+4  References
 
 .ti 0 
-9.1  Normative References
+4.1  Normative References
 
 .in 14
 .\" \# REF  -- Managed reference list. Syntax: [RFC]nnnn[;Label], ... ,[RFC]nnnn[;Label]
@@ -165,7 +151,7 @@ format to place attachments like images or documents.
 
 
 .ti 0
-9.2  Informative References
+4.2  Informative References
 
 .in 14
 .\" \# REF  -- Managed reference list. Syntax: [RFC]nnnn[;Label], ... ,[RFC]nnnn[;Label]
