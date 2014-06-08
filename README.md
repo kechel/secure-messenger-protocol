@@ -1,15 +1,12 @@
 secure-messenger-protocol
 =========================
 
-A protocol to create easy to use messaging apps while using e-mail and pgp-encryption.
+This document describes the Secure Messenger Protocol, which is designed to
+allow the creation of easy to use messenger applications based on standard 
+E-Mail as transportation-medium and pgp as encryption mechanism.
 
-This project is 'work in progress' and not yet finished. The goal is to submit a 
-working and clean INTERNET-DRAFT to the IETF.
+The latest version of this document can always be found on GitHub:
 
-The file secure-messenger-protocol.txt is automatically generated from 
-secure-messenger-protocol.nroff, and it's only here for convenience of readers.
+''https://github.com/kechel/secure-messenger-protocol''
 
-Links:
-- RFC publication process: http://www.rfc-editor.org/pubprocess.html
-- Independent submissions: http://www.rfc-editor.org/indsubs.html
-
+This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nd/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
