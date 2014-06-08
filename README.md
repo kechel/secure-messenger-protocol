@@ -7,6 +7,6 @@ E-Mail as transportation-medium and pgp as encryption mechanism.
 
 The latest version of this document can always be found on GitHub:
 
-''https://github.com/kechel/secure-messenger-protocol''
+https://github.com/kechel/secure-messenger-protocol
 
 This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nd/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
